@@ -1,0 +1,10 @@
+{
+  "name": "poc-surveyform",
+  "version": "0.0.1",
+  "dependencies": {
+
+  },
+  "scripts": {
+    "cypress:open": "cypress open"
+  }
+}

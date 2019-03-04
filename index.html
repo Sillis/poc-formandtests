@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title>Proof-of-competence survey form</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="Ville Siikaluoma">
+		<meta name="description" content="A proof-of-competence form for job applications">
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	</head>
+
+	<body>
+		<div id="form">
+			<h1 id="headline">Sign up form - Summer cruise 2020</h1>
+			<p>Hello and welcome to sign up for the Summer cruise 2020! Are we ready for some <strong>fun</strong>?!</p><br>
+			<form action="/submit_data.php" method="post">
+				<p>
+					<h4>First name:</h4> <input type="text" name="firstname" id="firstname" required><br>
+					<h4>Last name:</h4> <input type="text" name="lastname" id="lastname" required><br>
+					<h4>Age:</h4> <input type="number" min="18" max="120" name="age" id="age" required><br><br>
+					<h4>E-mail address:</h4> <input type="email" name="email" id="phonenumber" required><br>
+					<h4>Phone number:</h4> <input type="tel" name="phonenumber" id="phonenumber"
+									pattern="[0-9]{10}"
+									required> Example: 0401234567<br>
+					<h4>Passport number:</h4> <input type="text" name="passport" id="passport"
+										pattern="FP[0-9]{7}"
+										required> Example: FP1234567<br>
+										<p>We need your passport number for the travel company, so that we can get through customs faster.</p><br>
+					<h4>Member of Yhdistys?</h4> <input type="radio" name="membership" checked id="memberYes" required>Yes</input>
+										<input type="radio" name="membership" id="memberNo">No</input><br>
+					<h4>Room type?</h4> <input type="radio" name="roomtype" checked id="roomTypeA">A class </input> 
+								<input type="radio" name="roomtype" id="roomTypeB">B class </input>
+								<input type="radio" name="roomtype" id="roomTypeC">C class </input><br>
+					<h4>Roommate?</h4> <input type="text" name="roommate" id="roommate"><br>
+					<h4>Dietary restrictions?</h4> <input type="text" name="diet" id="diet"><br><br>
+					<h4>I approve of the usage of my data as stipulated in the <a href="privacy-policy.html" target="_blank">privacy policy</a>.
+					<input type="checkbox" name="privacypolicy" id="privacypolicy" required></h4> <br><br>
+					<input type="submit" name="Submit" value="Sign up!" id="submit">
+				</p>
+			</form>
+		</div>
+	</body>
